@@ -1,0 +1,55 @@
+prose:
+  rooturl: ''
+  siteurl: 'https://periggouanvic.github.io/droit-integrite-physiologique-site/'
+  media: 'static/images'
+  ignore:
+    - /.github
+    - /site
+    - /static
+    - /_prose.yml
+    - /build-site.sh
+    - /README.md
+    - /GIT_SETUP.md
+    - /INSTRUCTIONS.md
+    - /TODO.md
+  metadata:
+    02-definitions:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    03-critique-nutritionnelle:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    04-rapports-cas:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    05-editoriaux:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    06-droits-specifiques:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    07-ressources:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    08-a-propos:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"
+    09-mentions-legales:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titre"

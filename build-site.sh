@@ -6,6 +6,15 @@ TEMPLATE="./static/minimal.html"  # Adaptable : ton gabarit HTML
 
 mkdir -p "$OUTPUT"
 
+# Page d'accueil
+if [ -f "01-accueil.md" ]; then
+  pandoc "01-accueil.md" \
+    -s \
+    --metadata title="Droit à l'Intégrité Physiologique" \
+    --template="$TEMPLATE" \
+    -o "$OUTPUT/index.html"
+fi
+
 for section in 0* 1* 2* 3* 4* 5* 6* 07* 08* 09*; do
   if [ -d "$section" ]; then
     for page in "$section"/*.md; do
