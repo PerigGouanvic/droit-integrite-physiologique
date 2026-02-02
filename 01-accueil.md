@@ -1,4 +1,4 @@
-# Bienvenue sur le site du Droit à l'Intégrité Physiologique (DIP)
+# Droit à l'Intégrité Physiologique (DIP)
 
 Ce site est dédié à l'exploration et à la promotion du **Droit à l'Intégrité Physiologique (DIP)**, un concept novateur qui vise à compléter et élargir les droits humains existants, notamment le droit à la santé et le droit à l'alimentation.
 
