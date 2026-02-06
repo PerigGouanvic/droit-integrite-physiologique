@@ -161,6 +161,32 @@ header h1 a:hover {
     padding-left: 25px;
 }
 
+/* Bandeau version préliminaire */
+.beta-banner {
+    background-color: #fff3cd;
+    border-bottom: 1px solid #ffc107;
+    color: #856404;
+    font-size: 0.9rem;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.beta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.beta-banner a {
+    color: #856404;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.beta-banner a:hover {
+    color: #533f03;
+}
+
 /* Breadcrumb (Fil d'Ariane) */
 .breadcrumb {
     background-color: var(--gris-clair);
@@ -290,6 +316,13 @@ a:hover {
     color: var(--texte-principal);
 }
 
+/* Contact email masqué */
+.contact-link {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
 /* Footer */
 footer {
     background-color: var(--bleu-fonce);
@@ -386,6 +419,16 @@ footer {
     .dropdown li a:hover {
         background-color: rgba(255, 255, 255, 0.1);
         padding-left: 45px;
+    }
+    
+    /* Bandeau beta mobile */
+    .beta-banner {
+        font-size: 0.85rem;
+        padding: 10px 0;
+    }
+    
+    .beta-container {
+        padding: 0 15px;
     }
     
     /* Breadcrumb mobile - amélioré */
