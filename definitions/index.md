@@ -4,7 +4,7 @@ title: Définitions fondamentales
 description: Concepts clés qui sous-tendent le Droit à l'Intégrité Physiologique
 ---
 
-# Définitions fondamentales du Droit à l'Intégrité Physiologique (DIP)
+# Définitions fondamentales du Droit à l'intégrité physiologique (DIP)
 
 Bienvenue dans la section dédiée aux définitions clés qui sous-tendent le concept de Droit à l'Intégrité Physiologique (DIP). Pour comprendre pleinement cette approche révolutionnaire des droits humains, il est essentiel de saisir ses fondements et ses distinctions par rapport aux cadres juridiques et médicaux existants.
 
