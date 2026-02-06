@@ -43,6 +43,47 @@
         </div>
     </header>
     
+    {% unless page.url == '/' %}
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <div class="breadcrumb-container">
+            <ol>
+                <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+                
+                {% assign url_parts = page.url | split: '/' | where_exp: "item", "item != ''" %}
+                {% assign breadcrumb_path = "" %}
+                
+                {% for part in url_parts %}
+                    {% assign breadcrumb_path = breadcrumb_path | append: '/' | append: part %}
+                    {% if forloop.last and page.title %}
+                        <li aria-current="page">{{ page.title }}</li>
+                    {% else %}
+                        {% assign section_title = part | replace: '-', ' ' | capitalize %}
+                        {% case part %}
+                            {% when 'definitions' %}
+                                {% assign section_title = 'Définitions' %}
+                            {% when 'critique' %}
+                                {% assign section_title = 'Critique nutritionnelle' %}
+                            {% when 'rapports' %}
+                                {% assign section_title = 'Rapports de cas' %}
+                            {% when 'editoriaux' %}
+                                {% assign section_title = 'Éditoriaux' %}
+                            {% when 'droits' %}
+                                {% assign section_title = 'Droits spécifiques' %}
+                            {% when 'ressources' %}
+                                {% assign section_title = 'Ressources' %}
+                            {% when 'a-propos' %}
+                                {% assign section_title = 'À propos' %}
+                            {% when 'mentions' %}
+                                {% assign section_title = 'Mentions légales' %}
+                        {% endcase %}
+                        <li><a href="{{ breadcrumb_path | relative_url }}">{{ section_title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
+    </nav>
+    {% endunless %}
+    
     <main>
         {{ content }}
     </main>

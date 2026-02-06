@@ -6,6 +6,7 @@
     --bordure-bleue: #81c784;
     --texte-principal: #2c3e50;
     --gris-clair: #f8f9fa;
+    --gris-moyen: #e9ecef;
 }
 
 /* Reset et base */
@@ -158,6 +159,55 @@ nav {
 .dropdown li a:hover {
     background-color: var(--vert-pale);
     padding-left: 25px;
+}
+
+/* Breadcrumb (Fil d'Ariane) */
+.breadcrumb {
+    background-color: var(--gris-clair);
+    border-bottom: 1px solid var(--gris-moyen);
+    font-size: 0.9rem;
+}
+
+.breadcrumb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: 8px;
+    color: #6c757d;
+    font-size: 1.2em;
+}
+
+.breadcrumb a {
+    color: var(--bleu-principal);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: var(--bleu-fonce);
+    text-decoration: underline;
+}
+
+.breadcrumb li[aria-current="page"] {
+    color: var(--texte-principal);
+    font-weight: 500;
 }
 
 /* Main content */
@@ -336,6 +386,15 @@ footer {
     .dropdown li a:hover {
         background-color: rgba(255, 255, 255, 0.1);
         padding-left: 45px;
+    }
+    
+    /* Breadcrumb mobile */
+    .breadcrumb-container {
+        padding: 10px 15px;
+    }
+    
+    .breadcrumb {
+        font-size: 0.85rem;
     }
     
     h1 {
