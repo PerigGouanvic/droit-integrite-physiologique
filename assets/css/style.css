@@ -80,7 +80,7 @@ header h1 a:hover {
 }
 
 /* Navigation principale */
-nav {
+.main-navigation {
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -317,7 +317,7 @@ footer {
         font-size: 1.2rem;
     }
     
-    nav {
+    .main-navigation {
         order: 3;
         width: 100%;
         max-height: 0;
@@ -325,7 +325,7 @@ footer {
         transition: max-height 0.3s ease;
     }
     
-    nav.active {
+    .main-navigation.active {
         max-height: 600px;
     }
     

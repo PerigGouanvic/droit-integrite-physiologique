@@ -15,7 +15,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav>
+            <nav class="main-navigation">
                 <ul class="main-nav">
                     <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
                     
@@ -93,15 +93,15 @@
     </footer>
     
     <script>
-        // Mobile menu toggle
+        // Mobile menu toggle - CORRIGÉ pour cibler spécifiquement le menu principal
         const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const nav = document.querySelector('nav');
+        const mainNav = document.querySelector('.main-navigation');
         
-        if (menuToggle) {
+        if (menuToggle && mainNav) {
             menuToggle.addEventListener('click', function() {
                 const isExpanded = this.getAttribute('aria-expanded') === 'true';
                 this.setAttribute('aria-expanded', !isExpanded);
-                nav.classList.toggle('active');
+                mainNav.classList.toggle('active');
             });
         }
         
