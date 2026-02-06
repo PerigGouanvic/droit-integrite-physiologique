@@ -93,14 +93,61 @@
     
     <main>
         {{ content }}
+        
+        <!-- Section commentaires -->
+        <div class="comments-section">
+            <h2>Commentaires et discussions</h2>
+            <p class="comment-intro">Vous pouvez commenter cette page et discuter du contenu ci-dessous. Les commentaires sont stockés sur GitHub Discussions.</p>
+            
+            <!-- Widget giscus -->
+            <script src="https://giscus.app/client.js"
+                    data-repo="PerigGouanvic/droit-integrite-physiologique"
+                    data-repo-id="R_kgDOQqj586"
+                    data-category="General"
+                    data-category-id="DIC_kwDOQqj5888ClCdC"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="light"
+                    data-lang="fr"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            
+            <!-- Fallback email -->
+            <div class="email-fallback">
+                <p><strong>Vous préférez envoyer un email?</strong></p>
+                <a href="mailto:perig.gouanvic@gmail.com?subject=Commentaire%20sur%20{{ page.title | url_encode }}&body=Page%3A%20{{ page.url | absolute_url | url_encode }}%0A%0AMon%20commentaire%3A%0A" class="email-button">
+                    📧 Envoyer un commentaire par email
+                </a>
+            </div>
+        </div>
     </main>
     
     <footer>
-        <p>&copy; 2026 Droit à l'Intégrité Physiologique</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Droit à l'Intégrité Physiologique</p>
+            <p class="footer-links">
+                <a href="https://github.com/PerigGouanvic/droit-integrite-physiologique" target="_blank" rel="noopener">
+                    🐛 Code source sur GitHub
+                </a>
+                |
+                <a href="https://github.com/PerigGouanvic/droit-integrite-physiologique/discussions" target="_blank" rel="noopener">
+                    💬 Discussions
+                </a>
+                |
+                <a href="{{ '/a-propos/' | relative_url }}">
+                    ℹ️ Contribuer
+                </a>
+            </p>
+        </div>
     </footer>
     
     <script>
-        // Mobile menu toggle - CORRIGÉ pour cibler spécifiquement le menu principal
+        // Mobile menu toggle
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const mainNav = document.querySelector('.main-navigation');
         
@@ -116,20 +163,16 @@
         const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
         dropdownToggles.forEach(toggle => {
             toggle.addEventListener('click', function(e) {
-                // Toujours empêcher la navigation sur #
                 e.preventDefault();
                 
-                // Sur mobile, toggle le dropdown
                 if (window.innerWidth <= 768) {
                     const parentLi = this.parentElement;
                     const wasActive = parentLi.classList.contains('active');
                     
-                    // Fermer tous les autres dropdowns
                     document.querySelectorAll('.has-dropdown').forEach(item => {
                         item.classList.remove('active');
                     });
                     
-                    // Toggle celui-ci
                     if (!wasActive) {
                         parentLi.classList.add('active');
                     }
