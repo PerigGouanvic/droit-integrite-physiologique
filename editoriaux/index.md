@@ -12,17 +12,20 @@ Nous y abordons les lacunes des systèmes actuels, les urgences médicales qui e
 
 ## Articles éditoriaux
 
-### [L'urgence médicale invisible]({{ '/editoriaux/urgence-medicale/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/editoriaux/urgence-medicale/' | relative_url }}">L'urgence médicale invisible</a></h3>
+<p>Les carences physiologiques comme urgences médicales méconnues.</p>
+</div>
 
-Les carences physiologiques comme urgences médicales méconnues.
+<div class="card">
+<h3><a href="{{ '/editoriaux/carence-droit/' | relative_url }}">La carence comme violation des droits</a></h3>
+<p>Pourquoi l'inaction face aux déséquilibres physiologiques constitue une violation des droits humains.</p>
+</div>
 
-### [La carence comme violation des droits]({{ '/editoriaux/carence-droit/' | relative_url }})
-
-Pourquoi l'inaction face aux déséquilibres physiologiques constitue une violation des droits humains.
-
-### [Les limites éthiques des essais randomisés]({{ '/editoriaux/limites-ethiques-essais/' | relative_url }})
-
-Critique de l'utilisation exclusive des essais contrôlés randomisés comme standard de preuve.
+<div class="card">
+<h3><a href="{{ '/editoriaux/limites-ethiques-essais/' | relative_url }}">Les limites éthiques des essais randomisés</a></h3>
+<p>Critique de l'utilisation exclusive des essais contrôlés randomisés comme standard de preuve.</p>
+</div>
 
 ---
 

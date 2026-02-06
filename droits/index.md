@@ -12,21 +12,25 @@ Ces droits spécifiques illustrent comment le DIP se traduit concrètement en re
 
 ## Droits documentés
 
-### [Droit à un niveau de magnésium adapté]({{ '/droits/magnesium-adapte/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/droits/magnesium-adapte/' | relative_url }}">Droit à un niveau de magnésium adapté</a></h3>
+<p>Le droit d'accéder à une supplémentation en magnésium lorsque nécessaire.</p>
+</div>
 
-Le droit d'accéder à une supplémentation en magnésium lorsque nécessaire.
+<div class="card">
+<h3><a href="{{ '/droits/niveau-hormonal-optimal/' | relative_url }}">Droit à un niveau hormonal optimal</a></h3>
+<p>Le droit au maintien ou à la restauration d'équilibres hormonaux normaux.</p>
+</div>
 
-### [Droit à un niveau hormonal optimal]({{ '/droits/niveau-hormonal-optimal/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/droits/equilibre-vitaminique/' | relative_url }}">Droit à un équilibre vitaminique</a></h3>
+<p>Le droit à la prévention et à la correction des carences vitaminiques.</p>
+</div>
 
-Le droit au maintien ou à la restauration d'équilibres hormonaux normaux.
-
-### [Droit à un équilibre vitaminique]({{ '/droits/equilibre-vitaminique/' | relative_url }})
-
-Le droit à la prévention et à la correction des carences vitaminiques.
-
-### [Autres droits physiologiques]({{ '/droits/autres-droits/' | relative_url }})
-
-Exploration de droits additionnels en cours de développement.
+<div class="card">
+<h3><a href="{{ '/droits/autres-droits/' | relative_url }}">Autres droits physiologiques</a></h3>
+<p>Exploration de droits additionnels en cours de développement.</p>
+</div>
 
 ---
 

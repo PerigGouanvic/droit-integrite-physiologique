@@ -12,21 +12,25 @@ Le **Droit à l'Intégrité Physiologique** est le droit de toute personne au ma
 
 ## Articles de cette section
 
-### [Les Droits physiologiques eux-mêmes]({{ '/definitions/droits-physiologiques/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/definitions/droits-physiologiques/' | relative_url }}">Les Droits physiologiques eux-mêmes</a></h3>
+<p>L'ensemble des besoins physiologiques essentiels qui constituent la base du DIP.</p>
+</div>
 
-L'ensemble des besoins physiologiques essentiels qui constituent la base du DIP.
+<div class="card">
+<h3><a href="{{ '/definitions/fondes-sur-droits-vs-preuves/' | relative_url }}">Médecine fondée sur les droits vs médecine fondée sur les preuves</a></h3>
+<p>Une approche qui intègre l'éthique et le droit dans la prise de décision médicale.</p>
+</div>
 
-### [Médecine fondée sur les droits vs médecine fondée sur les preuves]({{ '/definitions/fondes-sur-droits-vs-preuves/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/definitions/irreductibilite-alimentation/' | relative_url }}">Irréductibilité des droits physiologiques au droit à l'alimentation</a></h3>
+<p>Pourquoi le DIP va au-delà de la seule alimentation.</p>
+</div>
 
-Une approche qui intègre l'éthique et le droit dans la prise de décision médicale.
-
-### [Irréductibilité des droits physiologiques au droit à l'alimentation]({{ '/definitions/irreductibilite-alimentation/' | relative_url }})
-
-Pourquoi le DIP va au-delà de la seule alimentation.
-
-### [Insuffisance du droit à la santé]({{ '/definitions/insuffisance-droit-sante/' | relative_url }})
-
-Les limites de l'obligation de moyens de l'État en matière de santé.
+<div class="card">
+<h3><a href="{{ '/definitions/insuffisance-droit-sante/' | relative_url }}">Insuffisance du droit à la santé</a></h3>
+<p>Les limites de l'obligation de moyens de l'État en matière de santé.</p>
+</div>
 
 ---
 

@@ -12,21 +12,25 @@ Chaque cas met en lumière les obstacles systémiques qui empêchent les individ
 
 ## Cas documentés
 
-### [Cas : Déficience en magnésium]({{ '/rapports/cas-magnesium/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/rapports/cas-magnesium/' | relative_url }}">Cas : Déficience en magnésium</a></h3>
+<p>Étude d'un cas de carence en magnésium et ses implications pour le DIP.</p>
+</div>
 
-Étude d'un cas de carence en magnésium et ses implications pour le DIP.
+<div class="card">
+<h3><a href="{{ '/rapports/cas-vitamineD/' | relative_url }}">Cas : Déficience en vitamine D</a></h3>
+<p>Analyse des obstacles à la correction d'une carence en vitamine D.</p>
+</div>
 
-### [Cas : Déficience en vitamine D]({{ '/rapports/cas-vitamineD/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/rapports/cas-hypothyroidie/' | relative_url }}">Cas : Hypothyroïdie</a></h3>
+<p>Examen des difficultés d'accès au traitement optimal de l'hypothyroïdie.</p>
+</div>
 
-Analyse des obstacles à la correction d'une carence en vitamine D.
-
-### [Cas : Hypothyroïdie]({{ '/rapports/cas-hypothyroidie/' | relative_url }})
-
-Examen des difficultés d'accès au traitement optimal de l'hypothyroïdie.
-
-### [Réformes proposées]({{ '/rapports/reformes-proposees/' | relative_url }})
-
-Recommandations systémiques basées sur ces cas.
+<div class="card">
+<h3><a href="{{ '/rapports/reformes-proposees/' | relative_url }}">Réformes proposées</a></h3>
+<p>Recommandations systémiques basées sur ces cas.</p>
+</div>
 
 ---
 

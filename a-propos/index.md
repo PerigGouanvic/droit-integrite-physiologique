@@ -12,17 +12,20 @@ Le projet Droit à l'Intégrité Physiologique (DIP) vise à promouvoir une reco
 
 ## En savoir plus
 
-### [Notre démarche]({{ '/a-propos/a-propos/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/a-propos/a-propos/' | relative_url }}">Notre démarche</a></h3>
+<p>Origines et objectifs du projet DIP.</p>
+</div>
 
-Origines et objectifs du projet DIP.
+<div class="card">
+<h3><a href="{{ '/a-propos/equipe/' | relative_url }}">Équipe</a></h3>
+<p>Qui sommes-nous et comment nous contribuons au projet.</p>
+</div>
 
-### [Équipe]({{ '/a-propos/equipe/' | relative_url }})
-
-Qui sommes-nous et comment nous contribuons au projet.
-
-### [Contact]({{ '/a-propos/contact/' | relative_url }})
-
-Comment nous joindre pour questions, collaborations ou contributions.
+<div class="card">
+<h3><a href="{{ '/a-propos/contact/' | relative_url }}">Contact</a></h3>
+<p>Comment nous joindre pour questions, collaborations ou contributions.</p>
+</div>
 
 ---
 
