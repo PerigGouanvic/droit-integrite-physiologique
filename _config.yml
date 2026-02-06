@@ -5,9 +5,6 @@ description: Un cadre juridique et éthique pour reconnaître l'importance des p
 baseurl: "/droit-integrite-physiologique"
 url: "https://periggouanvic.github.io"
 
-# Thème
-theme: null
-
 # Markdown
 markdown: kramdown
 kramdown:
@@ -19,28 +16,28 @@ kramdown:
 collections:
   definitions:
     output: true
-    permalink: /definitions/:name/
+    permalink: /:collection/:name/
   critique:
     output: true
-    permalink: /critique/:name/
+    permalink: /:collection/:name/
   rapports:
     output: true
-    permalink: /rapports/:name/
+    permalink: /:collection/:name/
   editoriaux:
     output: true
-    permalink: /editoriaux/:name/
+    permalink: /:collection/:name/
   droits:
     output: true
-    permalink: /droits/:name/
+    permalink: /:collection/:name/
   ressources:
     output: true
-    permalink: /ressources/:name/
+    permalink: /:collection/:name/
   apropos:
     output: true
     permalink: /a-propos/:name/
   mentions:
     output: true
-    permalink: /mentions/:name/
+    permalink: /:collection/:name/
 
 # Exclusions
 exclude:
@@ -50,3 +47,5 @@ exclude:
   - INSTRUCTIONS.md
   - README.md
   - site/
+  - Gemfile
+  - Gemfile.lock
