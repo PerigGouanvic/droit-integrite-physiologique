@@ -104,6 +104,7 @@ nav {
     font-weight: 500;
     transition: background-color 0.2s ease;
     border-bottom: 3px solid transparent;
+    cursor: pointer;
 }
 
 .main-nav > li > a:hover {
@@ -129,6 +130,7 @@ nav {
     transform: translateY(-10px);
     transition: all 0.3s ease;
     border-radius: 0 0 4px 4px;
+    z-index: 100;
 }
 
 .has-dropdown:hover .dropdown {
@@ -150,7 +152,7 @@ nav {
     padding: 12px 20px;
     color: var(--texte-principal);
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .dropdown li a:hover {
@@ -163,6 +165,7 @@ main {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    min-height: 60vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -261,6 +264,7 @@ footer {
     header h1 {
         order: 1;
         flex: 1;
+        font-size: 1.2rem;
     }
     
     nav {
@@ -272,13 +276,14 @@ footer {
     }
     
     nav.active {
-        max-height: 500px;
+        max-height: 600px;
     }
     
     .main-nav {
         flex-direction: column;
         width: 100%;
         gap: 0;
+        padding-bottom: 10px;
     }
     
     .main-nav > li {
@@ -291,29 +296,46 @@ footer {
         border-bottom: none;
     }
     
+    /* Dropdowns sur mobile */
+    .has-dropdown > a::after {
+        content: ' ▼';
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    
+    .has-dropdown.active > a::after {
+        content: ' ▲';
+    }
+    
     .dropdown {
         position: static;
         opacity: 1;
         visibility: visible;
         transform: none;
         box-shadow: none;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.05);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        border-radius: 0;
     }
     
     .has-dropdown.active .dropdown {
-        max-height: 300px;
+        max-height: 400px;
+    }
+    
+    .dropdown li {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     
     .dropdown li a {
         color: white;
-        padding-left: 40px;
+        padding: 12px 20px 12px 40px;
     }
     
     .dropdown li a:hover {
         background-color: rgba(255, 255, 255, 0.1);
+        padding-left: 45px;
     }
     
     h1 {
@@ -322,5 +344,9 @@ footer {
     
     h2 {
         font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 0 15px;
     }
 }

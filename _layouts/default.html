@@ -20,7 +20,7 @@
                     <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
                     
                     <li class="has-dropdown">
-                        <a href="#">Le concept</a>
+                        <a href="#" class="dropdown-toggle">Le concept</a>
                         <ul class="dropdown">
                             <li><a href="{{ '/definitions/' | relative_url }}">Définitions</a></li>
                             <li><a href="{{ '/critique/' | relative_url }}">Critique nutritionnelle</a></li>
@@ -28,7 +28,7 @@
                     </li>
                     
                     <li class="has-dropdown">
-                        <a href="#">Documentation</a>
+                        <a href="#" class="dropdown-toggle">Documentation</a>
                         <ul class="dropdown">
                             <li><a href="{{ '/rapports/' | relative_url }}">Rapports de cas</a></li>
                             <li><a href="{{ '/editoriaux/' | relative_url }}">Éditoriaux</a></li>
@@ -56,21 +56,46 @@
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const nav = document.querySelector('nav');
         
-        menuToggle.addEventListener('click', function() {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-            nav.classList.toggle('active');
-        });
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                nav.classList.toggle('active');
+            });
+        }
         
-        // Dropdown functionality for touch devices
-        const dropdownParents = document.querySelectorAll('.has-dropdown');
-        dropdownParents.forEach(parent => {
-            parent.addEventListener('click', function(e) {
+        // Dropdown toggle for mobile
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                // Toujours empêcher la navigation sur #
+                e.preventDefault();
+                
+                // Sur mobile, toggle le dropdown
                 if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    this.classList.toggle('active');
+                    const parentLi = this.parentElement;
+                    const wasActive = parentLi.classList.contains('active');
+                    
+                    // Fermer tous les autres dropdowns
+                    document.querySelectorAll('.has-dropdown').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Toggle celui-ci
+                    if (!wasActive) {
+                        parentLi.classList.add('active');
+                    }
                 }
             });
+        });
+        
+        // Fermer les dropdowns au redimensionnement
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                document.querySelectorAll('.has-dropdown').forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
         });
     </script>
 </body>
