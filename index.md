@@ -17,16 +17,37 @@ Notre objectif est de fournir une base solide pour comprendre et développer le 
 
 ## Explorer le site
 
-<div class="quick-links">
+<div class="card">
+<h3><a href="{{ '/definitions/' | relative_url }}">Définitions fondamentales</a></h3>
+<p>Découvrir les concepts clés qui sous-tendent le Droit à l'Intégrité Physiologique.</p>
+</div>
 
-### Liens rapides
+<div class="card">
+<h3><a href="{{ '/critique/' | relative_url }}">Critique nutritionnelle</a></h3>
+<p>Explorer les limites des notions courantes comme « alimentation saine » et « équilibrée ».</p>
+</div>
 
-- [Découvrir les définitions fondamentales du DIP]({{ '/definitions/' | relative_url }})
-- [Explorer la critique des notions nutritionnelles courantes]({{ '/critique/' | relative_url }})
-- [Consulter nos rapports de cas]({{ '/rapports/' | relative_url }})
-- [Lire nos éditoriaux et prises de position]({{ '/editoriaux/' | relative_url }})
-- [Apprendre sur les droits physiologiques spécifiques]({{ '/droits/' | relative_url }})
-- [Accéder aux ressources et références]({{ '/ressources/' | relative_url }})
-- [En savoir plus sur notre démarche]({{ '/a-propos/' | relative_url }})
+<div class="card">
+<h3><a href="{{ '/rapports/' | relative_url }}">Rapports de cas</a></h3>
+<p>Consulter des études de cas concrètes illustrant les violations du DIP.</p>
+</div>
 
+<div class="card">
+<h3><a href="{{ '/editoriaux/' | relative_url }}">Éditoriaux</a></h3>
+<p>Lire nos prises de position et réflexions critiques sur les enjeux du DIP.</p>
+</div>
+
+<div class="card">
+<h3><a href="{{ '/droits/' | relative_url }}">Droits physiologiques spécifiques</a></h3>
+<p>Apprendre sur les droits particuliers qui découlent du DIP.</p>
+</div>
+
+<div class="card">
+<h3><a href="{{ '/ressources/' | relative_url }}">Ressources</a></h3>
+<p>Accéder aux références, textes légaux et documentation.</p>
+</div>
+
+<div class="card">
+<h3><a href="{{ '/a-propos/' | relative_url }}">À propos</a></h3>
+<p>En savoir plus sur notre démarche et l'équipe derrière ce projet.</p>
 </div>
