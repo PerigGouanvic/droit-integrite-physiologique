@@ -1,356 +1,326 @@
-/* ============================================
-   Palette de couleurs - Bleu pâle institutionnel
-   ============================================ */
+/* Variables de couleur */
 :root {
-    /* Couleurs principales */
-    --color-primary-pale: #B8E0E6;
-    --color-primary: #4A90A4;
-    --color-primary-dark: #1D3557;
-    
-    /* Couleurs de fond */
-    --color-bg-main: #FAFAFA;
-    --color-bg-light: #F1FAEE;
-    --color-bg-section: #FFFFFF;
-    
-    /* Couleurs de texte */
-    --color-text-primary: #2C2C2C;
-    --color-text-secondary: #555555;
-    --color-text-light: #777777;
-    
-    /* Couleurs complémentaires */
-    --color-border: #E8E8E8;
-    --color-accent: #E63946;
-    --color-success: #94C9A9;
-    
-    /* Espacement */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
-    --spacing-xl: 4rem;
-    
-    /* Typographie */
-    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    --font-family-heading: 'Georgia', 'Times New Roman', serif;
-    --font-size-base: 1.125rem;
-    --line-height-base: 1.7;
+    --bleu-principal: #4a90e2;
+    --bleu-fonce: #2c5282;
+    --vert-pale: #e8f5e9;
+    --bordure-bleue: #81c784;
+    --texte-principal: #2c3e50;
+    --gris-clair: #f8f9fa;
 }
 
-/* ============================================
-   Reset et base
-   ============================================ */
+/* Reset et base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-    color: var(--color-text-primary);
-    background-color: var(--color-bg-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: var(--texte-principal);
+    background-color: #ffffff;
 }
 
-/* ============================================
-   Typographie
-   ============================================ */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-heading);
-    color: var(--color-primary-dark);
-    line-height: 1.3;
-    margin-bottom: var(--spacing-sm);
-    font-weight: 600;
+/* Header et navigation */
+header {
+    background-color: var(--bleu-principal);
+    color: white;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-h1 { font-size: 2.5rem; margin-top: var(--spacing-lg); }
-h2 { font-size: 2rem; margin-top: var(--spacing-md); }
-h3 { font-size: 1.5rem; margin-top: var(--spacing-md); }
-h4 { font-size: 1.25rem; margin-top: var(--spacing-sm); }
-
-p {
-    margin-bottom: var(--spacing-sm);
-}
-
-a {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: var(--color-accent);
-    text-decoration: underline;
-}
-
-strong, b {
-    font-weight: 600;
-    color: var(--color-primary-dark);
-}
-
-/* ============================================
-   Layout
-   ============================================ */
-.container {
+.header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
-
-/* ============================================
-   Header
-   ============================================ */
-.site-header {
-    background-color: var(--color-bg-section);
-    border-bottom: 3px solid var(--color-primary);
-    padding: var(--spacing-md) 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-}
-
-.site-title {
-    margin: 0;
-    font-size: 1.75rem;
-    font-weight: 600;
-}
-
-.site-title a {
-    color: var(--color-primary-dark);
-    text-decoration: none;
-}
-
-.site-title a:hover {
-    color: var(--color-primary);
-}
-
-/* Navigation principale */
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-sm);
-}
-
-.main-nav li {
-    display: inline-block;
-}
-
-.main-nav a {
-    display: block;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background-color: var(--color-primary-pale);
-    color: var(--color-primary-dark);
-    border-radius: 4px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-}
-
-.main-nav a:hover {
-    background-color: var(--color-primary);
-    color: var(--color-bg-section);
-    text-decoration: none;
-}
-
-/* ============================================
-   Contenu principal
-   ============================================ */
-.site-content {
-    min-height: 60vh;
-    padding: var(--spacing-lg) 0;
-}
-
-.page-header {
-    margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-md);
-    border-bottom: 2px solid var(--color-primary-pale);
-}
-
-.page-title {
-    color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-sm);
-}
-
-.page-description {
-    font-size: 1.25rem;
-    color: var(--color-text-secondary);
-    font-style: italic;
-}
-
-.content {
-    background-color: var(--color-bg-section);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-}
-
-/* ============================================
-   Listes
-   ============================================ */
-ul, ol {
-    margin-left: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
-}
-
-li {
-    margin-bottom: var(--spacing-xs);
-}
-
-/* ============================================
-   Sections et cartes
-   ============================================ */
-.section {
-    margin-bottom: var(--spacing-lg);
-}
-
-.card {
-    background-color: var(--color-bg-light);
-    border: 1px solid var(--color-border);
-    border-left: 4px solid var(--color-primary);
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-    border-radius: 4px;
-}
-
-.card h3 {
-    margin-top: 0;
-    color: var(--color-primary);
-}
-
-/* ============================================
-   Liens rapides / Navigation secondaire
-   ============================================ */
-.quick-links {
-    background-color: var(--color-bg-light);
-    padding: var(--spacing-md);
-    border-radius: 8px;
-    border: 2px solid var(--color-primary-pale);
-    margin: var(--spacing-lg) 0;
-}
-
-.quick-links h3 {
-    margin-top: 0;
-    color: var(--color-primary);
-}
-
-.quick-links ul {
-    list-style: none;
-    margin-left: 0;
-}
-
-.quick-links li {
-    margin-bottom: var(--spacing-sm);
-}
-
-.quick-links a {
-    display: inline-block;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background-color: var(--color-bg-section);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    transition: all 0.2s ease;
-}
-
-.quick-links a:hover {
-    background-color: var(--color-primary-pale);
-    border-color: var(--color-primary);
-    text-decoration: none;
-}
-
-/* ============================================
-   Footer
-   ============================================ */
-.site-footer {
-    background-color: var(--color-primary-dark);
-    color: var(--color-bg-light);
-    padding: var(--spacing-lg) 0;
-    margin-top: var(--spacing-xl);
-}
-
-.footer-content {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--spacing-md);
 }
 
-.footer-nav ul {
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+header h1 a:hover {
+    opacity: 0.9;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Navigation principale */
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav {
     list-style: none;
     display: flex;
-    gap: var(--spacing-md);
-    margin: 0;
+    gap: 5px;
+    align-items: center;
 }
 
-.footer-nav a {
-    color: var(--color-bg-light);
-    font-size: 0.95rem;
+.main-nav > li {
+    position: relative;
 }
 
-.footer-nav a:hover {
-    color: var(--color-primary-pale);
+.main-nav > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 18px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    border-bottom: 3px solid transparent;
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
+.main-nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: var(--vert-pale);
+}
+
+/* Dropdown menus */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    border-radius: 0 0 4px 4px;
+}
+
+.has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown li {
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--texte-principal);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown li a:hover {
+    background-color: var(--vert-pale);
+    padding-left: 25px;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bleu-fonce);
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 3px solid var(--bleu-principal);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2em;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: var(--bleu-principal);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--bleu-fonce);
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    background-color: var(--vert-pale);
+    border-left: 4px solid var(--bordure-bleue);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--bleu-fonce);
+}
+
+.card h3 a {
+    color: var(--bleu-fonce);
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    color: var(--bleu-principal);
+}
+
+.card p {
+    margin-bottom: 0;
+    color: var(--texte-principal);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bleu-fonce);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 3px solid var(--bleu-principal);
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
-    :root {
-        --font-size-base: 1rem;
+    .header-container {
+        padding: 0 15px;
     }
     
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.35rem; }
-    
-    .header-content {
-        text-align: center;
+    .mobile-menu-toggle {
+        display: flex;
+        order: 2;
     }
     
-    .main-nav ul {
-        justify-content: center;
+    header h1 {
+        order: 1;
+        flex: 1;
     }
     
-    .main-nav a {
-        font-size: 0.9rem;
-        padding: var(--spacing-xs);
+    nav {
+        order: 3;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
     }
     
-    .content {
-        padding: var(--spacing-md);
+    nav.active {
+        max-height: 500px;
     }
     
-    .footer-content {
+    .main-nav {
         flex-direction: column;
-        text-align: center;
+        width: 100%;
+        gap: 0;
     }
     
-    .footer-nav ul {
-        flex-direction: column;
-        gap: var(--spacing-sm);
+    .main-nav > li {
+        width: 100%;
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
-}
-
-/* ============================================
-   Utilitaires
-   ============================================ */
-.text-center { text-align: center; }
-.text-muted { color: var(--color-text-light); }
-.mt-lg { margin-top: var(--spacing-lg); }
-.mb-lg { margin-bottom: var(--spacing-lg); }
-.separator {
-    border: 0;
-    height: 2px;
-    background: linear-gradient(to right, transparent, var(--color-primary-pale), transparent);
-    margin: var(--spacing-lg) 0;
+    
+    .main-nav > li > a {
+        padding: 15px 20px;
+        border-bottom: none;
+    }
+    
+    .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .has-dropdown.active .dropdown {
+        max-height: 300px;
+    }
+    
+    .dropdown li a {
+        color: white;
+        padding-left: 40px;
+    }
+    
+    .dropdown li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
 }
