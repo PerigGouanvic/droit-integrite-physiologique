@@ -92,6 +92,15 @@
     {% endunless %}
     
     <main>
+        <!-- Bouton éditer cette page -->
+        {% if page.path %}
+        <div class="edit-page">
+            <a href="https://github.com/PerigGouanvic/droit-integrite-physiologique/edit/main/{{ page.path }}" target="_blank" rel="noopener" class="edit-button">
+                ✏️ Éditer cette page sur GitHub
+            </a>
+        </div>
+        {% endif %}
+        
         {{ content }}
         
         <!-- Section commentaires -->

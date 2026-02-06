@@ -244,6 +244,31 @@ main {
     min-height: 60vh;
 }
 
+/* Bouton éditer la page */
+.edit-page {
+    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gris-moyen);
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--gris-clair);
+    color: var(--texte-principal) !important;
+    text-decoration: none !important;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    border: 1px solid var(--gris-moyen);
+}
+
+.edit-button:hover {
+    background-color: var(--gris-moyen);
+    color: var(--bleu-fonce) !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--bleu-fonce);
     margin-top: 1.5em;
@@ -514,6 +539,18 @@ footer {
     
     .breadcrumb a {
         font-weight: 500;
+    }
+    
+    /* Bouton éditer mobile */
+    .edit-page {
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .edit-button {
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
     
     /* Commentaires mobile */
