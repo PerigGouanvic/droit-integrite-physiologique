@@ -23,7 +23,7 @@ body {
     line-height: 1.8;
     color: var(--texte-principal);
     background-color: #ffffff;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     
     /* Activation maximale des ligatures */
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
@@ -180,7 +180,7 @@ header h1 a:hover {
 .breadcrumb {
     background-color: var(--gris-clair);
     border-bottom: 1px solid var(--gris-moyen);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     border-bottom: 3px solid var(--bleu-principal);
     padding-bottom: 10px;
     margin-top: 0;
@@ -251,12 +251,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 2em;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 p {
@@ -322,7 +322,7 @@ footer {
 /* Responsive - Mobile */
 @media (max-width: 768px) {
     body {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
     }
     
     .header-container {
@@ -413,7 +413,7 @@ footer {
     
     /* Breadcrumb mobile - amélioré */
     .breadcrumb {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         background-color: white;
         border-bottom: 2px solid var(--gris-moyen);
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -432,15 +432,15 @@ footer {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
     
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     main {
