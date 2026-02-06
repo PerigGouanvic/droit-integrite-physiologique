@@ -388,13 +388,24 @@ footer {
         padding-left: 45px;
     }
     
-    /* Breadcrumb mobile */
-    .breadcrumb-container {
-        padding: 10px 15px;
-    }
-    
+    /* Breadcrumb mobile - amélioré */
     .breadcrumb {
         font-size: 0.85rem;
+        background-color: white;
+        border-bottom: 2px solid var(--gris-moyen);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    .breadcrumb-container {
+        padding: 12px 15px;
+    }
+    
+    .breadcrumb ol {
+        gap: 6px;
+    }
+    
+    .breadcrumb a {
+        font-weight: 500;
     }
     
     h1 {
@@ -407,5 +418,6 @@ footer {
     
     main {
         padding: 0 15px;
+        margin-top: 30px;
     }
 }
