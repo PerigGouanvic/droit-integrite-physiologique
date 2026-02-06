@@ -12,37 +12,21 @@ Chaque cas met en lumière les obstacles systémiques qui empêchent les individ
 
 ## Cas documentés
 
-<div class="card">
-
 ### [Cas : Déficience en magnésium]({{ '/rapports/cas-magnesium/' | relative_url }})
 
 Étude d'un cas de carence en magnésium et ses implications pour le DIP.
-
-</div>
-
-<div class="card">
 
 ### [Cas : Déficience en vitamine D]({{ '/rapports/cas-vitamineD/' | relative_url }})
 
 Analyse des obstacles à la correction d'une carence en vitamine D.
 
-</div>
-
-<div class="card">
-
 ### [Cas : Hypothyroïdie]({{ '/rapports/cas-hypothyroidie/' | relative_url }})
 
 Examen des difficultés d'accès au traitement optimal de l'hypothyroïdie.
 
-</div>
-
-<div class="card">
-
 ### [Réformes proposées]({{ '/rapports/reformes-proposees/' | relative_url }})
 
 Recommandations systémiques basées sur ces cas.
-
-</div>
 
 ---
 

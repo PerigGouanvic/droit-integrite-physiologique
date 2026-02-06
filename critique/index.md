@@ -12,37 +12,21 @@ Le Droit à l'Intégrité Physiologique (DIP) nous invite à dépasser ces sloga
 
 ## Articles de cette section
 
-<div class="card">
-
 ### [Les limites de la notion d'« alimentation saine » ou « nutritive »]({{ '/critique/alimentation-saine-limites/' | relative_url }})
 
 Pourquoi ces expressions sont trompeuses et insuffisantes.
-
-</div>
-
-<div class="card">
 
 ### [Les ambiguïtés de l'expression « alimentation équilibrée »]({{ '/critique/alimentation-equilibree-ambiguites/' | relative_url }})
 
 Ce que ce slogan populaire ne dit pas sur les besoins individuels.
 
-</div>
-
-<div class="card">
-
 ### [Pourquoi il n'existe pas de « bon aliment » universel]({{ '/critique/bon-aliment-universel/' | relative_url }})
 
 La variabilité biologique et les interactions nutriments-pathologies.
 
-</div>
-
-<div class="card">
-
 ### [Illustrations pratiques]({{ '/critique/illustrations-pratiques/' | relative_url }})
 
 Exemples concrets de ces concepts appliqués.
-
-</div>
 
 ---
 

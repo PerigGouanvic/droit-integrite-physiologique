@@ -12,29 +12,17 @@ Vous y trouverez des références aux textes légaux existants, aux recommandati
 
 ## Documentation disponible
 
-<div class="card">
-
 ### [Textes légaux]({{ '/ressources/textes-legaux/' | relative_url }})
 
 Cadres juridiques nationaux et internationaux pertinents pour le DIP.
-
-</div>
-
-<div class="card">
 
 ### [Recommandations internationales]({{ '/ressources/recommandations-internationales/' | relative_url }})
 
 Directives et recommandations d'organisations internationales.
 
-</div>
-
-<div class="card">
-
 ### [Bibliographie thématique]({{ '/ressources/biblio-thematique/' | relative_url }})
 
 Littérature scientifique et académique organisée par thème.
-
-</div>
 
 ---
 

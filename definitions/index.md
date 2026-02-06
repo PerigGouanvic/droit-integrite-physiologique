@@ -12,37 +12,21 @@ Le **Droit à l'Intégrité Physiologique** est le droit de toute personne au ma
 
 ## Articles de cette section
 
-<div class="card">
-
 ### [Les Droits physiologiques eux-mêmes]({{ '/definitions/droits-physiologiques/' | relative_url }})
 
 L'ensemble des besoins physiologiques essentiels qui constituent la base du DIP.
-
-</div>
-
-<div class="card">
 
 ### [Médecine fondée sur les droits vs médecine fondée sur les preuves]({{ '/definitions/fondes-sur-droits-vs-preuves/' | relative_url }})
 
 Une approche qui intègre l'éthique et le droit dans la prise de décision médicale.
 
-</div>
-
-<div class="card">
-
 ### [Irréductibilité des droits physiologiques au droit à l'alimentation]({{ '/definitions/irreductibilite-alimentation/' | relative_url }})
 
 Pourquoi le DIP va au-delà de la seule alimentation.
 
-</div>
-
-<div class="card">
-
 ### [Insuffisance du droit à la santé]({{ '/definitions/insuffisance-droit-sante/' | relative_url }})
 
 Les limites de l'obligation de moyens de l'État en matière de santé.
-
-</div>
 
 ---
 

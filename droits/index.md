@@ -12,37 +12,21 @@ Ces droits spécifiques illustrent comment le DIP se traduit concrètement en re
 
 ## Droits documentés
 
-<div class="card">
-
 ### [Droit à un niveau de magnésium adapté]({{ '/droits/magnesium-adapte/' | relative_url }})
 
 Le droit d'accéder à une supplémentation en magnésium lorsque nécessaire.
-
-</div>
-
-<div class="card">
 
 ### [Droit à un niveau hormonal optimal]({{ '/droits/niveau-hormonal-optimal/' | relative_url }})
 
 Le droit au maintien ou à la restauration d'équilibres hormonaux normaux.
 
-</div>
-
-<div class="card">
-
 ### [Droit à un équilibre vitaminique]({{ '/droits/equilibre-vitaminique/' | relative_url }})
 
 Le droit à la prévention et à la correction des carences vitaminiques.
 
-</div>
-
-<div class="card">
-
 ### [Autres droits physiologiques]({{ '/droits/autres-droits/' | relative_url }})
 
 Exploration de droits additionnels en cours de développement.
-
-</div>
 
 ---
 
