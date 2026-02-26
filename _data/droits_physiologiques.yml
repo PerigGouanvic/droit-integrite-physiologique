@@ -1,0 +1,167 @@
+# Base de données des droits physiologiques
+# Chaque entrée représente un droit spécifique lié à l'intégrité physiologique
+
+- nom: Vitamine D
+  categorie: vitamine
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - scientifique
+    - politique
+  description: Déficit très fréquent (>40% de la population), crucial pour immunité, santé osseuse et mentale
+  page: "/droits/vitamine-d/"
+  status: en_developpement
+
+- nom: Magnésium
+  categorie: mineral
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - scientifique
+    - financier
+  description: Carence courante, plus de 300 réactions enzymatiques, stress et sommeil
+  page: "/droits/magnesium-adapte/"
+  status: documente
+
+- nom: Vitamine B12
+  categorie: vitamine
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - scientifique
+    - ethique
+  description: Essentielle pour système nerveux, risque majeur pour végétaliens et personnes âgées
+  page: "/droits/vitamine-b12/"
+  status: en_developpement
+
+- nom: Fer
+  categorie: mineral
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - scientifique
+    - politique
+  description: Anémie ferriprive très fréquente, particulièrement chez les femmes menstruées
+  page: "/droits/fer/"
+  status: en_developpement
+
+- nom: Testostérone
+  categorie: hormone
+  gravite: haute
+  cout: moyen
+  types_probleme:
+    - scientifique
+    - politique
+    - ethique
+  description: Hypogonadisme sous-diagnostiqué, impact majeur sur qualité de vie et santé métabolique
+  page: "/droits/niveau-hormonal-optimal/"
+  status: en_developpement
+
+- nom: Vitamine K2
+  categorie: vitamine
+  gravite: moyenne
+  cout: faible
+  types_probleme:
+    - scientifique
+  description: Souvent négligée, essentielle pour métabolisme du calcium et santé cardiovasculaire
+  page: "/droits/vitamine-k2/"
+  status: en_developpement
+
+- nom: Oméga-3 (EPA/DHA)
+  categorie: macronutriment
+  gravite: moyenne
+  cout: moyen
+  types_probleme:
+    - scientifique
+    - financier
+  description: Ratio oméga-6/oméga-3 déséquilibré dans alimentation moderne, inflammation chronique
+  page: "/droits/omega-3/"
+  status: en_developpement
+
+- nom: Exercice cardiovasculaire
+  categorie: activite
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - politique
+    - financier
+    - social
+  description: Sédentarité épidémique, accès limité aux installations, facteur de risque majeur
+  page: "/droits/exercice-cardiovasculaire/"
+  status: en_developpement
+
+- nom: Iode
+  categorie: mineral
+  gravite: moyenne
+  cout: faible
+  types_probleme:
+    - scientifique
+    - politique
+  description: Carence réémergente dans certaines régions, essentiel pour thyroïde
+  page: "/droits/iode/"
+  status: en_developpement
+
+- nom: Zinc
+  categorie: mineral
+  gravite: moyenne
+  cout: faible
+  types_probleme:
+    - scientifique
+  description: Immunité, cicatrisation, reproduction, carence fréquente
+  page: "/droits/zinc/"
+  status: en_developpement
+
+- nom: Sommeil suffisant
+  categorie: activite
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - politique
+    - social
+    - financier
+  description: Privation chronique généralisée, impact sur santé mentale et physique
+  page: "/droits/sommeil/"
+  status: en_developpement
+
+- nom: Vitamine C
+  categorie: vitamine
+  gravite: faible
+  cout: faible
+  types_probleme:
+    - scientifique
+  description: Carence rare dans pays développés mais apports souvent sous-optimaux
+  page: "/droits/vitamine-c/"
+  status: en_developpement
+
+- nom: Protéines adéquates
+  categorie: macronutriment
+  gravite: moyenne
+  cout: moyen
+  types_probleme:
+    - financier
+    - social
+  description: Apports insuffisants fréquents, particulièrement chez personnes âgées
+  page: "/droits/proteines/"
+  status: en_developpement
+
+- nom: Thyroïde (T3/T4)
+  categorie: hormone
+  gravite: haute
+  cout: faible
+  types_probleme:
+    - scientifique
+    - politique
+  description: Hypothyroïdie sous-diagnostiquée, critères diagnostiques controversés
+  page: "/droits/thyroide/"
+  status: en_developpement
+
+- nom: Exposition solaire contrôlée
+  categorie: activite
+  gravite: moyenne
+  cout: gratuit
+  types_probleme:
+    - politique
+    - social
+  description: Messages contradictoires sur exposition solaire, source naturelle de vitamine D
+  page: "/droits/exposition-solaire/"
+  status: en_developpement
