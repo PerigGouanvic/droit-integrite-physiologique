@@ -16,7 +16,7 @@ Cette section explore en détail des droits physiologiques spécifiques qui déc
   <div class="filtre-groupe">
     <label for="tri-select">Trier par :</label>
     <select id="tri-select">
-      <option value="nom">Nom (A-Z)</option>
+      <option value="nom">Nom (A–Z)</option>
       <option value="gravite-desc">Gravité (Haute → Faible)</option>
       <option value="gravite-asc">Gravité (Faible → Haute)</option>
       <option value="cout-asc">Coût (Faible → Élevé)</option>
@@ -75,24 +75,27 @@ Cette section explore en détail des droits physiologiques spécifiques qui déc
 <div id="compteur-resultats" class="compteur"></div>
 
 <div id="liste-droits" class="liste-droits">
-  {% for droit in site.data.droits_physiologiques %}
-  <div class="droit-card" 
-       data-categorie="{{ droit.categorie }}" 
-       data-gravite="{{ droit.gravite }}" 
+  {% assign droits_tries = site.droits | sort: "nom" %}
+  {% for droit in droits_tries %}
+  {% if droit.nom %}
+  <div class="droit-card"
+       data-nom="{{ droit.nom }}"
+       data-categorie="{{ droit.categorie }}"
+       data-gravite="{{ droit.gravite }}"
        data-cout="{{ droit.cout }}"
        data-types="{{ droit.types_probleme | join: ',' }}">
-    
+
     <div class="droit-header">
       <h3 class="droit-nom">{{ droit.nom }}</h3>
       <div class="droit-badges">
-        <span class="badge badge-categorie badge-{{ droit.categorie }}">{{ droit.categorie }}</span>
-        <span class="badge badge-gravite badge-gravite-{{ droit.gravite }}">{{ droit.gravite }}</span>
-        <span class="badge badge-cout">{{ droit.cout }}</span>
+        <span class="badge badge-{{ droit.categorie }}">{{ droit.categorie }}</span>
+        <span class="badge badge-gravite-{{ droit.gravite }}">{{ droit.gravite }}</span>
+        <span class="badge badge-cout">coût : {{ droit.cout }}</span>
       </div>
     </div>
-    
+
     <p class="droit-description">{{ droit.description }}</p>
-    
+
     <div class="droit-meta">
       <div class="droit-types">
         <strong>Problèmes :</strong>
@@ -101,62 +104,49 @@ Cette section explore en détail des droits physiologiques spécifiques qui déc
         {% endfor %}
       </div>
     </div>
-    
-    {% if droit.page %}
-    <a href="{{ droit.page | relative_url }}" class="droit-link">En savoir plus →</a>
+
+    {% if droit.status == 'documente' %}
+    <a href="{{ droit.url | relative_url }}" class="droit-link">Lire la page complète →</a>
     {% else %}
     <span class="droit-link-disabled">Page en développement</span>
     {% endif %}
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
 <script>
-// Données des droits pour le tri et filtrage
-const droits = {{ site.data.droits_physiologiques | jsonify }};
-
-// Ordre de gravité et coût
 const ordreGravite = { 'haute': 3, 'moyenne': 2, 'faible': 1 };
-const ordreCout = { 'gratuit': 0, 'faible': 1, 'moyen': 2, 'eleve': 3 };
+const ordreCout    = { 'gratuit': 0, 'faible': 1, 'moyen': 2, 'eleve': 3 };
 
-// Fonction de filtrage et tri
 function appliquerFiltres() {
-  const tri = document.getElementById('tri-select').value;
+  const tri             = document.getElementById('tri-select').value;
   const categorieFiltre = document.getElementById('categorie-select').value;
-  const graviteFiltre = document.getElementById('gravite-select').value;
-  const coutFiltre = document.getElementById('cout-select').value;
-  const typeFiltre = document.getElementById('type-select').value;
-  
+  const graviteFiltre   = document.getElementById('gravite-select').value;
+  const coutFiltre      = document.getElementById('cout-select').value;
+  const typeFiltre      = document.getElementById('type-select').value;
+
   const cards = Array.from(document.querySelectorAll('.droit-card'));
   let visibleCount = 0;
-  
-  // Filtrage
+
   cards.forEach(card => {
-    const categorie = card.dataset.categorie;
-    const gravite = card.dataset.gravite;
-    const cout = card.dataset.cout;
-    const types = card.dataset.types.split(',');
-    
-    const visible = 
-      (categorieFiltre === 'tous' || categorie === categorieFiltre) &&
-      (graviteFiltre === 'tous' || gravite === graviteFiltre) &&
-      (coutFiltre === 'tous' || cout === coutFiltre) &&
-      (typeFiltre === 'tous' || types.includes(typeFiltre));
-    
+    const types   = card.dataset.types.split(',');
+    const visible =
+      (categorieFiltre === 'tous' || card.dataset.categorie === categorieFiltre) &&
+      (graviteFiltre   === 'tous' || card.dataset.gravite   === graviteFiltre)   &&
+      (coutFiltre      === 'tous' || card.dataset.cout      === coutFiltre)      &&
+      (typeFiltre      === 'tous' || types.includes(typeFiltre));
+
     card.style.display = visible ? 'block' : 'none';
     if (visible) visibleCount++;
   });
-  
+
   // Tri
   const container = document.getElementById('liste-droits');
-  const cardsVisibles = cards.filter(card => card.style.display !== 'none');
-  
-  cardsVisibles.sort((a, b) => {
+  cards.filter(c => c.style.display !== 'none').sort((a, b) => {
     switch(tri) {
       case 'nom':
-        return a.querySelector('.droit-nom').textContent.localeCompare(
-          b.querySelector('.droit-nom').textContent
-        );
+        return a.dataset.nom.localeCompare(b.dataset.nom, 'fr');
       case 'gravite-desc':
         return ordreGravite[b.dataset.gravite] - ordreGravite[a.dataset.gravite];
       case 'gravite-asc':
@@ -165,20 +155,14 @@ function appliquerFiltres() {
         return ordreCout[a.dataset.cout] - ordreCout[b.dataset.cout];
       case 'cout-desc':
         return ordreCout[b.dataset.cout] - ordreCout[a.dataset.cout];
-      default:
-        return 0;
+      default: return 0;
     }
-  });
-  
-  // Réorganiser le DOM
-  cardsVisibles.forEach(card => container.appendChild(card));
-  
-  // Mettre à jour le compteur
-  document.getElementById('compteur-resultats').textContent = 
+  }).forEach(card => container.appendChild(card));
+
+  document.getElementById('compteur-resultats').textContent =
     `${visibleCount} droit${visibleCount > 1 ? 's' : ''} affiché${visibleCount > 1 ? 's' : ''}`;
 }
 
-// Event listeners
 document.getElementById('tri-select').addEventListener('change', appliquerFiltres);
 document.getElementById('categorie-select').addEventListener('change', appliquerFiltres);
 document.getElementById('gravite-select').addEventListener('change', appliquerFiltres);
@@ -186,14 +170,11 @@ document.getElementById('cout-select').addEventListener('change', appliquerFiltr
 document.getElementById('type-select').addEventListener('change', appliquerFiltres);
 
 document.getElementById('reset-filtres').addEventListener('click', () => {
-  document.getElementById('tri-select').value = 'nom';
-  document.getElementById('categorie-select').value = 'tous';
-  document.getElementById('gravite-select').value = 'tous';
-  document.getElementById('cout-select').value = 'tous';
-  document.getElementById('type-select').value = 'tous';
+  ['tri-select','categorie-select','gravite-select','cout-select','type-select'].forEach(id => {
+    document.getElementById(id).selectedIndex = 0;
+  });
   appliquerFiltres();
 });
 
-// Initialisation
 appliquerFiltres();
 </script>
