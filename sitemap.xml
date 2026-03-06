@@ -1,9 +1,107 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {% comment %} Page d'accueil {% endcomment %}
   <url>
-    <loc>https://periggouanvic.github.io/droit-integrite-physiologique/</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  {% comment %} Pages statiques {% endcomment %}
+  {% for page in site.pages %}
+    {% if page.url != "/" and page.url != "/sitemap.xml" and page.url != "/robots.txt" and page.layout != null %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+    <lastmod>{{ page.last_modified_at | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} Collection : definitions {% endcomment %}
+  {% for doc in site.definitions %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : droits {% endcomment %}
+  {% for doc in site.droits %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : rapports {% endcomment %}
+  {% for doc in site.rapports %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : editoriaux {% endcomment %}
+  {% for doc in site.editoriaux %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : critique {% endcomment %}
+  {% for doc in site.critique %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : ressources {% endcomment %}
+  {% for doc in site.ressources %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : apropos {% endcomment %}
+  {% for doc in site.apropos %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+
+  {% comment %} Collection : mentions {% endcomment %}
+  {% for doc in site.mentions %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.last_modified_at | default: doc.date | default: site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  {% endfor %}
+
 </urlset>
