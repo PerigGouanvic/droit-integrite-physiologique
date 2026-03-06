@@ -3,15 +3,13 @@ layout: default
 title: Accueil
 ---
 
-# Droit à l'Intégrité Physiologique (DIP)
+# L'intégrité physiologique : un droit fondamental
 
-Ce site est dédié à l'exploration et à la promotion du **Droit à l'Intégrité Physiologique (DIP)**, un concept novateur qui vise à compléter et élargir les droits humains existants, notamment le droit à la santé et le droit à l'alimentation.
+Ce site est dédié à la reconnaissance et à la défense du **droit à l'intégrité physiologique (DIP)** — un droit fondamental encore innommé dans les corpus juridiques existants, qui vise à compléter et élargir les droits humains reconnus, notamment le droit à la santé et le droit à l'alimentation.
 
 Le DIP reconnaît que l'intégrité humaine ne se limite pas à l'absence de lésions physiques visibles, mais englobe l'équilibre complexe des systèmes internes qui permettent le fonctionnement optimal de l'organisme. Il s'agit du droit de toute personne au maintien, à la protection et à la restauration active de ses paramètres physiologiques normaux et de ses fonctions biologiques essentielles.
 
-À travers ce site, nous abordons les nombreuses situations, tant au sein qu'en dehors du système de santé, où le DIP est brimé, bafoué ou oublié. Nous mettons en lumière les définitions fondamentales, critiquons les notions nutritionnelles courantes, présentons des rapports de cas concrets, et proposons des prises de position éditoriales pour une meilleure reconnaissance de ces droits essentiels.
-
-Notre objectif est de fournir une base solide pour comprendre et développer le concept du Droit à l'Intégrité Physiologique, en offrant un cadre juridique et éthique pour reconnaître l'importance des paramètres physiologiques dans la protection des droits humains fondamentaux.
+À travers ce site, nous abordons les nombreuses situations, tant au sein qu'en dehors du système de santé, où ce droit est brimé, bafoué ou ignoré. Nous mettons en lumière les définitions fondamentales, critiquons les notions nutritionnelles courantes, présentons des rapports de cas concrets, et proposons des prises de position éditoriales pour une meilleure reconnaissance de ces droits essentiels.
 
 ---
 
@@ -19,7 +17,7 @@ Notre objectif est de fournir une base solide pour comprendre et développer le 
 
 <div class="card">
 <h3><a href="{{ '/definitions/' | relative_url }}">Définitions fondamentales</a></h3>
-<p>Découvrir les concepts clés qui sous-tendent le Droit à l'Intégrité Physiologique.</p>
+<p>Découvrir les concepts clés qui sous-tendent le droit à l'intégrité physiologique.</p>
 </div>
 
 <div class="card">
@@ -49,5 +47,5 @@ Notre objectif est de fournir une base solide pour comprendre et développer le 
 
 <div class="card">
 <h3><a href="{{ '/a-propos/' | relative_url }}">À propos</a></h3>
-<p>En savoir plus sur notre démarche et l'équipe derrière ce projet.</p>
+<p>En savoir plus sur la démarche et les fondements de ce projet.</p>
 </div>
