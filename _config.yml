@@ -39,6 +39,10 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+
 # Exclusions
 exclude:
   - build-site.sh
@@ -49,3 +53,4 @@ exclude:
   - site/
   - Gemfile
   - Gemfile.lock
+  - sitemap.xml
