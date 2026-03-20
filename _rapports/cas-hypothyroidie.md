@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cas - Hypothyroïdie
+description: "Rapport de cas : une personne dont les symptômes d'hypothyroïdie sont refusés en traitement malgré une TSH anormale — analyse de la violation du droit à un niveau hormonal optimal selon le DIP."
 ---
 
 # Cas : Hypothyroïdie

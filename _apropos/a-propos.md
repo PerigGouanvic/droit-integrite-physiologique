@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Notre démarche
+description: "Présentation de la démarche du projet DIP : un cadre conceptuel et juridique novateur à l'intersection du droit, de la physiologie et de l'éthique médicale, pour corriger les lacunes des systèmes de santé actuels."
 ---
 
 # Notre démarche

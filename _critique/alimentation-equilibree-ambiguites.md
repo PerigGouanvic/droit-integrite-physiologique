@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Ambiguïtés de l'alimentation équilibrée
+description: "Analyse des ambiguïtés de l'alimentation équilibrée : pourquoi les recommandations basées sur des moyennes de population ne suffisent pas à garantir l'intégrité physiologique de chaque individu."
 ---
 
 # Les ambiguïtés de l'expression « alimentation équilibrée »

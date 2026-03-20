@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Les limites éthiques des essais randomisés
+description: "Analyse des limites éthiques des essais contrôlés randomisés face aux droits physiologiques : pourquoi l'attente de preuves scientifiques ne peut primer sur le droit à traiter un déséquilibre physiologique mesurable."
 ---
 
 # Les limites éthiques des essais randomisés

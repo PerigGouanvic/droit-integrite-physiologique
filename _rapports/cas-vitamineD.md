@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cas - Déficience en vitamine D
+description: "Rapport de cas : déficience en vitamine D non traitée dans une région nordique — analyse du refus de supplémentation comme violation du droit à l'intégrité physiologique."
 ---
 
 # Cas : Déficience en vitamine D

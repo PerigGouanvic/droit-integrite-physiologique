@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Droit à un équilibre vitaminique
+description: "Le droit à un équilibre vitaminique : accès aux tests de dépistage et à la supplémentation pour prévenir et corriger les carences en vitamines D, B12, C, E, K et autres nutriments essentiels."
 ---
 
 # Droit à un équilibre vitaminique

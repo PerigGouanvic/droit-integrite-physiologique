@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accessibilité
+description: "Déclaration d'accessibilité du site Droit à l'Intégrité Physiologique : engagement envers les normes WCAG, navigation inclusive et contenu lisible pour tous."
 ---
 
 # Accessibilité

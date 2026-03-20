@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Recommandations internationales
+description: "Compilation des directives et recommandations d'organisations internationales (OMS, sociétés savantes médicales) en lien avec les droits physiologiques et la nutrition."
 ---
 
 # Recommandations internationales

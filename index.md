@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accueil
+description: "Présentation du Droit à l'Intégrité Physiologique (DIP) — un droit fondamental visant à protéger et restaurer les paramètres physiologiques de chaque individu, au-delà de ce que reconnaissent aujourd'hui les corpus juridiques existants."
 ---
 
 # L'intégrité physiologique : un droit fondamental

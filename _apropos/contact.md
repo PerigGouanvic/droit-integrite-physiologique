@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+description: "Informations de contact pour toute question, suggestion ou collaboration autour du projet Droit à l'Intégrité Physiologique."
 ---
 
 # Contact

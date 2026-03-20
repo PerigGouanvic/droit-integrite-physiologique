@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Limites de la notion d'alimentation saine
+description: "Critique de la notion d'alimentation saine : pourquoi le caractère nutritif d'un aliment n'est jamais absolu et dépend du contexte physiologique individuel — épinards, produits laitiers, noix et autres exemples."
 ---
 
 # Les limites de la notion d'« alimentation saine » ou « nutritive »

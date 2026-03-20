@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Textes légaux
+description: "Références aux cadres juridiques nationaux et internationaux pertinents pour la reconnaissance du Droit à l'Intégrité Physiologique : PIDESC, DUDH, conventions européennes et législations sur les droits des patients."
 ---
 
 # Textes légaux

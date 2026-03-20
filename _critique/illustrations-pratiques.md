@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Illustrations pratiques
+description: "Exemples pratiques illustrant les limites des recommandations nutritionnelles générales face aux besoins physiologiques individuels — carences malgré une alimentation équilibrée, super-aliments et profils inadaptés."
 ---
 
 # Illustrations pratiques

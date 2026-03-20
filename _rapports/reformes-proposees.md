@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Réformes proposées
+description: "Réformes systémiques proposées pour la reconnaissance du DIP : intégration juridique, accès universel aux tests physiologiques, remboursement des suppléments et formation des professionnels de santé."
 ---
 
 # Réformes proposées

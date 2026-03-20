@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cas - Déficience en magnésium
+description: "Rapport de cas : déficience légère en magnésium ignorée malgré des symptômes invalidants (fatigue, crampes, anxiété) — analyse du refus de traitement sous l'angle du Droit à l'Intégrité Physiologique."
 ---
 
 # Cas : Déficience en magnésium

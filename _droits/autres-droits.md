@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Autres droits physiologiques
+description: "Vue d'ensemble des droits physiologiques complémentaires reconnus par le DIP : équilibre en oligoéléments, microbiote intestinal, hydratation, cycles circadiens et droit à un environnement non toxique."
 ---
 
 # Autres droits physiologiques

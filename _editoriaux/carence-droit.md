@@ -1,6 +1,7 @@
 ---
 layout: default
 title: La carence comme violation des droits
+description: "Éditorial défendant que la carence nutritionnelle non traitée par le système de santé constitue une violation du Droit à l'Intégrité Physiologique — une obligation de résultats, pas seulement de moyens."
 ---
 
 # La carence comme violation des droits

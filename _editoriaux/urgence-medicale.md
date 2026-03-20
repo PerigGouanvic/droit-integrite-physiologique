@@ -1,6 +1,7 @@
 ---
 layout: default
 title: L'urgence médicale invisible
+description: "Éditorial sur les carences physiologiques chroniques comme urgences médicales invisibles : pourquoi leur négligence par les systèmes de santé constitue une violation des droits humains fondamentaux."
 ---
 
 # L'urgence médicale invisible

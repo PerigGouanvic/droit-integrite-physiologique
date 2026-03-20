@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Droit à un niveau hormonal optimal
+description: "Le droit à un niveau hormonal optimal : accès aux traitements de l'hypothyroïdie, des déficits en testostérone et œstrogène, et de tout déséquilibre hormonal affectant la qualité de vie."
 ---
 
 # Droit à un niveau hormonal optimal

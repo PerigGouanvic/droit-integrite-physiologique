@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "La carence en vitamine B1 : l'épidémie silencieuse"
+description: "Cette page redirige vers l'analyse complète du droit à un statut optimal en vitamine B1 (thiamine), intégrée dans la section Droits spécifiques."
 ---
 
 <!-- Cette page a été déplacée dans _droits/thiamine-adaptee.md pour intégration au système de droits spécifiques. -->

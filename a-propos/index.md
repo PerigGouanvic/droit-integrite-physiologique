@@ -1,6 +1,7 @@
 ---
 layout: default
 title: À propos
+description: "Présentation de la démarche, des objectifs et du statut du projet de recherche sur le Droit à l'Intégrité Physiologique (DIP), à l'intersection du droit, de la physiologie et de l'éthique médicale."
 ---
 
 # À propos du projet

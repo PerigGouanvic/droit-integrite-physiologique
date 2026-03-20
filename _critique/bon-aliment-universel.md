@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Pourquoi il n'existe pas de bon aliment universel
+description: "Pourquoi aucun aliment n'est universellement bon : variabilité biologique individuelle, interactions nutriments-pathologies et importance des ratios comme oméga-6/oméga-3 et calcium/magnésium."
 ---
 
 # Pourquoi il n'existe pas de « bon aliment » universel
