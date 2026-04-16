@@ -36,5 +36,6 @@ Allow: /
 User-agent: Diffbot
 Allow: /
 
-# Sitemap
+# Sitemap et index LLM
 Sitemap: https://periggouanvic.github.io/droit-integrite-physiologique/sitemap.xml
+LLMs: https://periggouanvic.github.io/droit-integrite-physiologique/llms.txt

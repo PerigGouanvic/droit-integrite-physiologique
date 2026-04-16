@@ -1,0 +1,73 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# L'intégrité physiologique : un droit fondamental
+
+> {{ site.description }}
+
+Ce site défend la reconnaissance du **Droit à l'Intégrité Physiologique (DIP)** — un droit humain fondamental encore absent des corpus juridiques existants, qui protège l'équilibre des systèmes biologiques internes de chaque individu. Il complète et dépasse le droit à la santé et le droit à l'alimentation.
+
+URL de base : {{ site.url }}{{ site.baseurl }}/
+
+---
+
+## Droits physiologiques spécifiques
+
+Chaque page documente un droit physiologique précis : le contexte scientifique, les violations systémiques observées, et le cadre juridique applicable.
+
+{% for item in site.droits %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## Définitions fondamentales
+
+{% for item in site.definitions %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## Critique nutritionnelle
+
+Analyse critique des notions courantes (alimentation saine, équilibrée, bon aliment) à la lumière des droits physiologiques.
+
+{% for item in site.critique %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## Rapports de cas
+
+Études de cas concrètes illustrant des violations du DIP dans des contextes médicaux réels.
+
+{% for item in site.rapports %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## Éditoriaux
+
+Prises de position argumentées sur les enjeux du DIP.
+
+{% for item in site.editoriaux %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## Ressources
+
+{% for item in site.ressources %}
+- [{{ item.title }}]({{ item.url | absolute_url }}){% if item.description %} : {{ item.description }}{% endif %}
+{% endfor %}
+
+---
+
+## À propos
+
+- [À propos]({{ site.url }}{{ site.baseurl }}/a-propos/) : Présentation de la démarche et fondements du projet DIP.
