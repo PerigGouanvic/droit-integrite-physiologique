@@ -16,6 +16,25 @@
     <meta property="og:locale" content="fr_FR">
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.url == '/' %}WebSite{% else %}Article{% endif %}",
+      "url": "{{ page.url | absolute_url }}",
+      "name": "{{ page.title | default: site.title }}",
+      "headline": "{{ page.title | default: site.title }}",
+      "description": "{{ page.description | default: site.description }}",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}"
+      }{% if page.date %},
+      "datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}
+    }
+    </script>
 </head>
 <body>
     <header>
